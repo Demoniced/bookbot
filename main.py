@@ -20,7 +20,7 @@ def report_printer(report,words):
 def main():
     #print(get_book_text("books/frankenstein.txt"))
         try:
-            if sys.argv[0] and [1]:
+            if len(sys.argv) > 1:
                 report_printer(report(character_counter(get_book_text(sys.argv[1]))),word_count(get_book_text(sys.argv[1])))
 
         except Exception:
