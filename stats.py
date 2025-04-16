@@ -3,7 +3,7 @@ def word_count(text):
     word_counter = 0
     for word in text_string:
         word_counter +=1
-    return f"{word_counter} words found in the document"
+    return word_counter
 def character_counter(char):
     text_string = char.split()
     joined = ' '.join(text_string)
